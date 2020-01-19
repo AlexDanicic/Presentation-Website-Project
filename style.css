@@ -1,0 +1,72 @@
+:root {
+    --gage-1-color: #4682b4;
+    --gage-2-color: #8d973c;
+    --gage-3-color: #46b455;
+    --gage-4-color: #5746b4;
+
+    /* Animation Speed */
+    --animate-speed: 1s;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body {
+    font-family: 'Bangers', cursive;
+    line-height: 1.4;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    /* Avoid the scrolling! */
+    overflow: hidden;
+}
+
+/* Page Colors */
+#page-1 { background: var(--gage-1-color) } 
+#page-2 { background: var(--gage-2-color) }
+#page-3 { background: var(--gage-3-color) } 
+#page-4 { background: var(--gage-4-color) } 
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.page h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #acacac;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {    
+    background: #333;
+    color: #acacac;
+}
+
+.btn-dark:hover {    
+    background: #acacac;
+    color: #333;
+}
